@@ -1,0 +1,9 @@
+.button {
+  color: var(--white-opaque);
+  transition: var(--transition-props);
+  cursor: pointer;
+}
+
+.button:hover {
+  color: var(--white);
+}
