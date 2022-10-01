@@ -5,6 +5,8 @@
   --white-opaque: rgba(255, 255, 255, 0.6);
   --white: #ffffff;
   --transition-props: all 400ms ease;
+  --red: #ff9393;
+  --green: #88bd88;
 }
 
 * {

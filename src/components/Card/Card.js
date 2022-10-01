@@ -16,10 +16,14 @@ const Card = ({ question, setAskedIds, askedIds }) => {
     <div className={cardClasses}>
       <div className={styles.card__inner} onClick={onClickHandler}>
         <div className={styles.card__front}>
-          <span>{question.question.question}</span>
+          <div className={styles.card__question}>
+            <span>{question.question.question}</span>
+          </div>
         </div>
         <div className={styles.card__back}>
-          <span>{question.question.answer}</span>
+          <div className={styles.card__answer}>
+            <span>{question.question.answer}</span>
+          </div>
           <div className={styles.card__none}>No</div>
           <div
             className={styles.card__yes}
