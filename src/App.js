@@ -27,7 +27,10 @@ function App() {
   useEffect(() => {
     fetchQuestion();
   }, [askedIds]);
-  console.log(question);
+
+  if (askedIds.length === 100) {
+    setAskedIds(questionsToDelete);
+  }
 
   return (
     <div className='App'>
